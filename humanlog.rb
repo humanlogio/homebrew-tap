@@ -5,20 +5,20 @@
 class Humanlog < Formula
   desc ""
   homepage ""
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/humanlogio/humanlog/releases/download/0.6.1/humanlog_0.6.1_darwin_arm64.tar.gz"
-      sha256 "95cf830c23bdda7e572548da0e6da907d22d080fc814fd519c708422853b7b1a"
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.6.2/humanlog_0.6.2_darwin_arm64.tar.gz"
+      sha256 "216c444d3d257e4efcace81597b1bddcb833529cdf2aed1c6fa8155749cd7172"
 
       def install
         bin.install "humanlog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/humanlogio/humanlog/releases/download/0.6.1/humanlog_0.6.1_darwin_amd64.tar.gz"
-      sha256 "2236e64f85f6e3e5e069871af04b85a9b0547d67af88a24562df1bc2145f8a83"
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.6.2/humanlog_0.6.2_darwin_amd64.tar.gz"
+      sha256 "5035f4c08b2e2e3019d5781e945e87f105f6b5266197df41835c651ec02b31ff"
 
       def install
         bin.install "humanlog"
@@ -28,16 +28,16 @@ class Humanlog < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanlogio/humanlog/releases/download/0.6.1/humanlog_0.6.1_linux_arm64.tar.gz"
-      sha256 "01324587b5bff09c6de22f0092b6ed5fef451d054645506bf88d300cad6bdbed"
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.6.2/humanlog_0.6.2_linux_arm64.tar.gz"
+      sha256 "a3bbec1baf407c7bdfdf9c576cce3bc3a4863b5dfbf0850ab7eafb9db8dff930"
 
       def install
         bin.install "humanlog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/humanlogio/humanlog/releases/download/0.6.1/humanlog_0.6.1_linux_amd64.tar.gz"
-      sha256 "490d30cc272a81fa18ae10be02bff20f53faf84dac029d8d649236d6a24788ba"
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.6.2/humanlog_0.6.2_linux_amd64.tar.gz"
+      sha256 "9154c7ab091a2429a3cefde347f82ea82afdccc7ea860052b34697a7da66a2c9"
 
       def install
         bin.install "humanlog"
