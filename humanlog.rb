@@ -5,20 +5,20 @@
 class Humanlog < Formula
   desc ""
   homepage ""
-  version "0.7.4"
+  version "0.7.5"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.4/humanlog_0.7.4_darwin_arm64.tar.gz"
-      sha256 "d9194edd24056404b2cf37c55190183fee93e9cfc490f70eee43dfb670c703e3"
+    if Hardware::CPU.intel?
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.5/humanlog_0.7.5_darwin_amd64.tar.gz"
+      sha256 "53ae2e0bdb587e73208974ff9f3ddb6bf334ec12bfdc808f0c2672c223e7d74a"
 
       def install
         bin.install "humanlog"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.4/humanlog_0.7.4_darwin_amd64.tar.gz"
-      sha256 "479931e3014475641daf5484270ec9501926a0c9b5ea21e93421ce2db6a2c71a"
+    if Hardware::CPU.arm?
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.5/humanlog_0.7.5_darwin_arm64.tar.gz"
+      sha256 "93e201d33286db5578564d1f4a0967e1511192a9ee398ccc132b0499f69b4a3e"
 
       def install
         bin.install "humanlog"
@@ -27,17 +27,17 @@ class Humanlog < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.4/humanlog_0.7.4_linux_amd64.tar.gz"
-      sha256 "2f36da722331d93123bd51b1058ec14f056254656a69daeb7e839d9db9a90ebc"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.5/humanlog_0.7.5_linux_arm64.tar.gz"
+      sha256 "7a6af76eb60ae6108d6a6f53f8451e08e6a0fead5b84f2edb71979c485d64ea9"
 
       def install
         bin.install "humanlog"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.4/humanlog_0.7.4_linux_arm64.tar.gz"
-      sha256 "4c282daf3bc6671af0d9f3458155a8bb52e89c98aa9757d4c38ab99641fa5e1b"
+    if Hardware::CPU.intel?
+      url "https://github.com/humanlogio/humanlog/releases/download/v0.7.5/humanlog_0.7.5_linux_amd64.tar.gz"
+      sha256 "329d26975d11b3843d0d31e7cbcfba95bc86fba5e15f8077284199b2612ede63"
 
       def install
         bin.install "humanlog"
