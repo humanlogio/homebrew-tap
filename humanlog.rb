@@ -10,7 +10,7 @@ class Humanlog < Formula
   on_macos do
     on_intel do
       url "https://github.com/humanlogio/humanlog/releases/download/v0.7.8/humanlog_0.7.8_darwin_amd64.tar.gz"
-      sha256 "97d4f3d84082f717230f55caae8a9991b2d1b53ae85751f4d1863f9b177b1548"
+      sha256 "2bd507ee1b3b6c01215f4c5fedca1e6f5005232dc8d19c1a2e9e251b906f4357"
 
       def install
         bin.install "humanlog"
@@ -18,7 +18,7 @@ class Humanlog < Formula
     end
     on_arm do
       url "https://github.com/humanlogio/humanlog/releases/download/v0.7.8/humanlog_0.7.8_darwin_arm64.tar.gz"
-      sha256 "a7a13ab9077e418457f0fb386047967f65771314daaf02fab8a7307a13b362d0"
+      sha256 "4e42f05a44ac3550d98389cebf2402aeadc6c4afcd8337dbfcd72607ccf364f7"
 
       def install
         bin.install "humanlog"
@@ -30,7 +30,7 @@ class Humanlog < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/humanlogio/humanlog/releases/download/v0.7.8/humanlog_0.7.8_linux_amd64.tar.gz"
-        sha256 "e93e54d717429cfe46d53e0b6d4abd4af0ceadb1bca6410bb2d631ebd1379234"
+        sha256 "57e69057a01fb66fb1185614ca110acb45d3a2585c7037d7e52ad950b49ac160"
 
         def install
           bin.install "humanlog"
@@ -40,7 +40,7 @@ class Humanlog < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/humanlogio/humanlog/releases/download/v0.7.8/humanlog_0.7.8_linux_arm64.tar.gz"
-        sha256 "554cafaa1804ed97e68ff901032859e63a555c0f28b951a2530cf7021cf14ddc"
+        sha256 "dddae43dc544232ad3ad5ee1f8013da7fd9c09f46ad162589a1c8906870b2f6b"
 
         def install
           bin.install "humanlog"
